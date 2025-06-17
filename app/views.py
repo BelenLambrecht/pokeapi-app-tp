@@ -156,7 +156,6 @@ from app.layers.services import services
 
 @login_required
 def deleteFavourite(request):
-    print("hola")
     if request.method == 'POST':
         fav_id = request.POST.get('id')
         success = services.deleteFavouriteById(fav_id)
